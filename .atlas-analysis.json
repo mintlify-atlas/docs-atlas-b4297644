@@ -1,0 +1,42 @@
+{
+  "projectType": "general",
+  "projectName": "Color Me",
+  "projectDescription": "A browser extension that lets you customize the color of your browser using a color wheel and save color schemes",
+  "theme": "willow",
+  "primaryColor": "#0665fc",
+  "lightColor": "#7cb4fc",
+  "darkColor": "#04a4ec",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": ["introduction", "features"]
+      },
+      {
+        "group": "Installation",
+        "pages": ["installation", "browser-support"]
+      },
+      {
+        "group": "Development",
+        "pages": ["setup", "building", "profiling"]
+      },
+      {
+        "group": "Features",
+        "pages": ["color-picking", "day-night-mode", "saved-colors"]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Color wheel picker for browser frame customization",
+    "Day/night mode with independent color schemes",
+    "Save and reload favorite colors",
+    "Cross-browser support (Chrome, Firefox, Opera, Edge)"
+  ],
+  "publicApiSurface": [
+    "setTheme(theme, value, mode)",
+    "changeMode(theme, mode)",
+    "updateColor(theme, value, mode)",
+    "storage.get(key)",
+    "storage.set(data)"
+  ]
+}
